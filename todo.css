@@ -1,0 +1,94 @@
+
+
+* {
+     box-sizing:border-box;
+     margin: 0 auto;
+   }
+
+   ul {
+     margin: 0;
+     padding: 0;
+      
+   }
+
+   ul li {
+     cursor:pointer;
+     position:sticky;
+     padding: 25px 5px 0px 0px;
+     background: yellow;
+     font-size: 22px
+     transition: 1.5s;
+   }
+   
+   ul li:nth-child(odd) {
+     background: yellow;
+   }
+   ul li:hover {
+     background:rgb(89, 150, 88);
+   }
+   ul li.checked {
+     background: skyblue;
+     color: red;
+ 
+   }
+   ul li.checked::before {
+     content: '';
+     position: absolute;
+     border-color: yellow ;
+     border-style:ridge;
+     border-width: 0 5px 7px 0;
+     top: 10px;
+     right: 100px;
+     transform: rotate(35deg);
+     height: 20px;
+     width: 10px;
+   }
+   .close {
+     position: absolute;
+     right: 0;
+     top: 0;
+     padding: 12px 16px 12px 16px;
+   }
+   .close:hover {
+     background-color: #f44336;
+     color: black;
+   }
+   .header {
+     background-color: rgb(20, 129, 141);
+     padding: 20px 90px 100px;
+     color: orange;
+     text-align:center;
+     border-radius:0vw;
+   }
+
+   .header:after {
+     content: " ";
+     display:table;
+     clear: both;
+   }
+   input {
+     margin: 0;
+     border:none;
+     border-radius: 45px;
+     width: 90%;
+     padding: 25px;
+     float: right;
+     font-size: 15px;
+   }
+   .addBtn {
+     margin: 20px;
+     padding: 10px;
+     width: 100%;
+     background: rgba(160, 107, 149, 0.276)
+     color: rgb(230, 3, 3);
+     float: left;
+     text-align: center;
+     font-size: 16px;
+     cursor: pointer;
+     transition: 0.3s;
+     border-radius: 15px;
+   }
+   
+   .addBtn:hover {
+     background-color: green;
+   }
